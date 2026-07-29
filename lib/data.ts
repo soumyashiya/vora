@@ -89,7 +89,7 @@ export const PRODUCTS = [
     title: "BPC-157 & TB-500 40mg",
     price: "$169.00",
     img: IMG.bpc,
-    tags: ["Dual Compound", "Recovery Blend", "COA Provided", "R&D Only"],
+    tags: ["Dual Compound", "Structural Research Blend", "COA Provided", "R&D Only"],
   },
   {
     id: "RP 05",
@@ -189,7 +189,7 @@ export const PRICING = [
   {
     n: "2",
     name: "BPC-157 & TB-500 40mg",
-    desc: "Recovery & repair research blend.",
+    desc: "Structural & tissue-research blend.",
     price: "$169.00",
     img: IMG.bpc,
     popular: true,
@@ -239,7 +239,7 @@ export const TESTIMONIALS = [
     sub: "Verified Buyer",
     avatar: AVATARS[2],
     quote:
-      "Every batch comes with a Janoshik certificate I can actually verify myself. That transparency is why I keep coming back — no other supplier comes close.",
+      "Every batch comes with a Janoshik certificate I can actually verify myself. That transparency is why I keep coming back no other supplier comes close.",
     tags: ["Verifiable COA", "Transparent", "Consistent", "Loyal"],
   },
   {

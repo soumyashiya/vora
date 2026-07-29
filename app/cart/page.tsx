@@ -150,9 +150,10 @@ export default function CartPage() {
                 </Link>
               </div>
 
-              <p className="mt-5 px-2 text-[12px] uppercase tracking-[0.14em] text-navy/40">
-                For laboratory R&amp;D use only · Not for human or veterinary
-                consumption
+              <p className="mt-5 px-2 text-[12px] leading-relaxed text-navy/50">
+                These products are intended solely for laboratory research purposes and are not
+                intended for human or veterinary use. Not intended to diagnose, treat, cure, or
+                prevent any disease.
               </p>
             </div>
           </div>

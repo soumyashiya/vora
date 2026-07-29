@@ -53,13 +53,13 @@ export default function Footer() {
             </h3>
             <p className="mt-5 max-w-md text-ivory/65">
               Vora Labs develops, fills and independently verifies premium
-              research peptides for controlled laboratory R&amp;D — every batch
+              research peptides for controlled laboratory R&amp;D every batch
               backed by a Janoshik certificate of analysis.
             </p>
             <div className="mt-7 flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-[13px] text-ivory/70">
               <LuShieldAlert size={18} className="flex-none text-lime" />
               Vora Labs does not operate on any social media. Order only via the
-              official site — beware of impersonators.
+              official site beware of impersonators.
             </div>
           </div>
 
@@ -144,10 +144,16 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-[13px] text-ivory/55 sm:flex-row">
+        <div className="mt-10 border-t border-white/10 pt-8 text-[12px] leading-relaxed text-ivory/50">
+          For research purposes only. Not intended for human or veterinary use. Not intended to
+          diagnose, treat, cure, or prevent any disease. Products are supplied strictly for
+          laboratory and analytical research conducted by qualified professionals.
+        </div>
+
+        <div className="mt-6 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-[13px] text-ivory/55 sm:flex-row">
           <p>© {new Date().getFullYear()} Vora Labs. All rights reserved.</p>
           <p className="uppercase tracking-[0.14em]">
-            For laboratory R&amp;D use only — not for human or veterinary
+            For laboratory R&amp;D use only not for human or veterinary
             consumption
           </p>
         </div>

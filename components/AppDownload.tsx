@@ -75,7 +75,7 @@ export default function AppDownload() {
           >
             <Image
               src={IMG.app}
-              alt="Wellness app"
+              alt="Vora Labs research platform shown on a mobile device"
               fill
               sizes="(max-width:1024px) 100vw, 40vw"
               className="object-cover"

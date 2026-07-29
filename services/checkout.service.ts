@@ -79,7 +79,7 @@ export async function sendOrderConfirmationEmail(
   orderNumber: string
 ): Promise<void> {
   try {
-    await fetch("/api/send-order-confirmation", {
+    const res = await fetch("/api/send-order-confirmation", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -96,7 +96,6 @@ export async function sendOrderConfirmationEmail(
             price: it.price,
           })),
           subtotal: totals.subtotal,
-          shipping: items.length ? 12 : 0,
           tax: 0,
           discount: totals.discountAmount,
           total: totals.total,
@@ -106,6 +105,10 @@ export async function sendOrderConfirmationEmail(
         },
       }),
     });
+    if (!res.ok) {
+      const data = await res.json().catch(() => null);
+      console.error("[checkout] order confirmation email failed:", res.status, data?.error);
+    }
   } catch (err) {
     console.error("[checkout] order confirmation email failed:", err);
   }

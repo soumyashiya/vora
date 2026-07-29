@@ -96,14 +96,19 @@ export default async function ProductPage({
             {/* add to cart */}
             <div className="mt-8">
               <AddToCart product={product} />
+              <p className="mt-3 text-[12px] uppercase tracking-[0.12em] text-navy/45">
+                For research use only — not for human or veterinary use
+              </p>
             </div>
 
-            {/* Description + Safety Protocol */}
+            {/* Description + Research Use Disclaimer */}
             <div className="mt-8 rounded-2xl border border-sand bg-white/60 p-5 text-[15px] leading-relaxed text-navy/75">
               <p>{product.description}</p>
               <p className="mt-4 rounded-xl bg-[#fff6d6]/60 px-4 py-3 text-[13px] leading-relaxed text-navy/80">
-                <strong className="text-navy">Safety Protocol:</strong>{" "}
-                Produced for laboratory research only. Not for human or veterinary consumption.
+                <strong className="text-navy">Research Use Disclaimer:</strong>{" "}
+                For research purposes only. Not intended for human or veterinary use. Not intended
+                to diagnose, treat, cure or prevent any disease. Supplied strictly for laboratory
+                and analytical research conducted by qualified professionals.
               </p>
             </div>
 

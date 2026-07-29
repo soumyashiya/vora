@@ -83,7 +83,7 @@ export default function Hero() {
         <div ref={imgRef} className="absolute inset-0">
           <Image
             src={IMG.hero}
-            alt="People practicing wellness outdoors"
+            alt="Vora Labs research compound presentation"
             fill
             priority
             quality={95}

@@ -73,7 +73,7 @@ function emailHtml(b: Body, id: string) {
     </table>
     ${billingBlock(b)}
     <p style="font-size:13px;color:#5B7088">Contact: ${b.customer.email} · ${b.customer.mobile}</p>
-    <p style="font-size:12px;color:#9aa7b4;text-transform:uppercase;letter-spacing:1px">For laboratory R&amp;D use only — not for human or veterinary consumption.</p>
+    <p style="font-size:12px;color:#9aa7b4;line-height:1.5">For research purposes only. Not intended for human or veterinary use. Not intended to diagnose, treat, cure, or prevent any disease. Products are supplied strictly for laboratory and analytical research conducted by qualified professionals.</p>
   </div>`;
 }
 

@@ -102,7 +102,7 @@ export default function About() {
 
             <ScrollReveal
               as="p"
-              text="Every Vora Labs compound is synthesised, filled and independently verified before it leaves the lab — so each batch arrives with documented purity, potency and stability you can confirm yourself."
+              text="Every Vora Labs compound is synthesised, filled and independently verified before it leaves the lab so each batch arrives with documented purity, potency and stability you can confirm yourself."
               className="mt-7 max-w-xl text-[18px] leading-relaxed"
             />
 
@@ -111,7 +111,7 @@ export default function About() {
                 <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[28px]">
                   <Image
                     src={IMG.aboutA}
-                    alt="Mountain yoga"
+                    alt="Vora Labs analysts reviewing a research sample in the laboratory"
                     fill
                     sizes="(max-width:768px) 100vw, 40vw"
                     className="object-cover transition-transform duration-[1.2s] ease-smooth hover:scale-105"
@@ -139,7 +139,7 @@ export default function About() {
                 <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[28px]">
                   <Image
                     src={IMG.aboutB}
-                    alt="Woman enjoying nature"
+                    alt="Vora Labs analyst reviewing sample data in the laboratory"
                     fill
                     sizes="(max-width:768px) 100vw, 40vw"
                     className="object-cover transition-transform duration-[1.2s] ease-smooth hover:scale-105"

@@ -13,7 +13,7 @@ export default function CTA() {
       <div className="relative mx-auto w-full max-w-[1320px] overflow-hidden rounded-[34px] sm:rounded-[44px]">
         <Image
           src={IMG.cta}
-          alt="Wellness journey"
+          alt="Laboratory microscopy station used in Vora Labs research analysis"
           fill
           sizes="100vw"
           className="object-cover"
@@ -38,7 +38,7 @@ export default function CTA() {
             className="max-w-xl text-lg text-ivory/80"
           >
             Research-grade compounds, independent verification, scheduled supply and
-            precision pens — one connected system for controlled R&amp;D.
+            precision pens one connected system for controlled R&amp;D.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 24 }}

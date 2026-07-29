@@ -53,7 +53,7 @@ export const PRODUCTS: Product[] = [
       "Vora Labs Tirzepatide 40mg is supplied in a pre-filled precision format at exact concentration, HPLC analysed and independently verified through Janoshik before release. Produced exclusively for controlled laboratory research and in-vitro study.",
     specs: [
       { label: "Form", value: "Pre-filled research pen (2.4 mL)" },
-      { label: "Concentration", value: "40 mg · 4 doses of 10 mg" },
+      { label: "Concentration", value: "40 mg total · 4 x 10 mg increments" },
       { label: "Verified Purity", value: "99%+ (HPLC)" },
       { label: "Testing", value: "Janoshik — COA provided" },
       { label: "Storage", value: "2–8°C · 56-day room-temp hold" },
@@ -100,7 +100,7 @@ export const PRODUCTS: Product[] = [
       "Vora Labs Retatrutide 20mg is filled to precise concentration in a pre-filled research format, then HPLC analysed and independently certified. Every batch is released with a verifiable certificate of analysis for controlled R&D programmes.",
     specs: [
       { label: "Form", value: "Pre-filled research pen (2.4 mL)" },
-      { label: "Concentration", value: "20 mg · 4 doses of 5 mg" },
+      { label: "Concentration", value: "20 mg total · 4 x 5 mg increments" },
       { label: "Verified Purity", value: "99%+ (HPLC)" },
       { label: "Testing", value: "Janoshik — COA provided" },
       { label: "Storage", value: "2–8°C · 56-day room-temp hold" },
@@ -146,7 +146,7 @@ export const PRODUCTS: Product[] = [
       "Vora Labs Retatrutide 40mg is our highest-concentration triple-agonist research format — validated for 56-day room-temperature stability and independently verified through Janoshik with full batch traceability.",
     specs: [
       { label: "Form", value: "Pre-filled research pen (2.4 mL)" },
-      { label: "Concentration", value: "40 mg · 4 doses of 10 mg" },
+      { label: "Concentration", value: "40 mg total · 4 x 10 mg increments" },
       { label: "Verified Purity", value: "99%+ (HPLC)" },
       { label: "Testing", value: "Janoshik — COA provided" },
       { label: "Storage", value: "2–8°C · 56-day room-temp hold" },
@@ -186,8 +186,8 @@ export const PRODUCTS: Product[] = [
       "/images/products/bpc-3.jpeg",
       "/images/products/bpc-4.jpeg",
     ],
-    category: "Recovery & Repair",
-    tagline: "Dual-compound recovery & repair research blend.",
+    category: "Structural & Tissue Research",
+    tagline: "Dual-compound structural and tissue-biology research blend.",
     description:
       "Vora Labs BPC-157 & TB-500 40mg combines two research peptides in a single pre-filled research format, formulated in a controlled environment and independently certified. Supplied strictly for laboratory research and in-vitro study.",
     specs: [
@@ -197,7 +197,7 @@ export const PRODUCTS: Product[] = [
       { label: "Testing", value: "Janoshik — COA provided" },
       { label: "Storage", value: "2–8°C · 56-day room-temp hold" },
     ],
-    tags: ["Dual Compound", "Recovery Blend", "COA Provided", "R&D Only"],
+    tags: ["Dual Compound", "Structural Research Blend", "COA Provided", "R&D Only"],
     batchNumber: "VRA-BPC-40-2604",
     fillVolume: "2.4 mL",
     purity: "99.12%",
@@ -234,7 +234,7 @@ export const PRODUCTS: Product[] = [
       "/images/products/glow-4.jpeg",
     ],
     category: "GHK-Cu Blend",
-    tagline: "Multi-peptide GHK-Cu research blend for skin & repair study.",
+    tagline: "Multi-peptide GHK-Cu research blend for dermal and connective-tissue study.",
     description:
       "Vora Labs Glow 70mg is a multi-peptide GHK-Cu research blend (BPC-157 / TB-500 / GHK-Cu) supplied in a pre-filled research format with full batch traceability and an independent certificate of analysis.",
     specs: [
@@ -282,12 +282,12 @@ export const PRODUCTS: Product[] = [
       "/images/products/nad-4.jpeg",
     ],
     category: "Cellular Research",
-    tagline: "High-dose NAD+ for cellular repair & anti-aging research.",
+    tagline: "High-dose NAD+ research compound for cellular metabolism study.",
     description:
       "Vora Labs NAD+ 1,000mg is a high-dose research compound supplied in a pre-filled research format, HPLC verified and independently certified for controlled cellular research and in-vitro study.",
     specs: [
       { label: "Form", value: "Pre-filled research pen (2.4 mL)" },
-      { label: "Concentration", value: "1,000 mg · 100 mg per dose" },
+      { label: "Concentration", value: "1,000 mg total · 100 mg increments" },
       { label: "Verified Purity", value: "99%+ (HPLC)" },
       { label: "Testing", value: "Janoshik — COA provided" },
       { label: "Storage", value: "2–8°C · 56-day room-temp hold" },
