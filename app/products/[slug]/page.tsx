@@ -78,7 +78,7 @@ export default async function ProductPage({
               <span className="font-serif text-5xl text-navy">
                 {product.priceLabel}
               </span>
-              <span className="mb-1.5 text-navy/50">GBP</span>
+              <span className="mb-1.5 text-navy/50">USD</span>
             </div>
 
             {/* tags */}

@@ -89,7 +89,7 @@ export async function sendOrderConfirmationEmail(
         },
         order: {
           orderNumber,
-          currency: "GBP",
+          currency: "USD",
           items: items.map((it) => ({
             name: it.name,
             quantity: it.qty,

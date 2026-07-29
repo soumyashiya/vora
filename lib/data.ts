@@ -6,8 +6,8 @@ export const COMPLIANCE =
 
 export const NAV_LINKS = [
   { label: "Home", href: "#top" },
+  { label: "Shop", href: "/shop" },
   { label: "About", href: "#about" },
-  { label: "Products", href: "#products" },
   { label: "Why Us", href: "#why" },
   { label: "Testimonial", href: "#verify" },
   { label: "Contact", href: "#footer" },
@@ -363,6 +363,7 @@ export const TRUST_ITEMS = [
 export const FOOTER_LINKS = {
   quick: [
     { label: "Home", href: "/#top" },
+    { label: "Shop", href: "/shop" },
     { label: "About", href: "/#about" },
     { label: "Products", href: "/#products" },
     { label: "Why Us", href: "/#why" },
@@ -372,10 +373,10 @@ export const FOOTER_LINKS = {
     { label: "Contact", href: "/#footer" },
   ],
   utility: [
-    { label: "Refund Policy", href: "#" },
-    { label: "Privacy Policy", href: "#" },
-    { label: "Terms of Service", href: "#" },
-    { label: "Certificate of Analysis", href: "/#verify" },
-    { label: "Wholesale Enquiries", href: "/#footer" },
+    { label: "Press Release", href: "/press-release" },
+    { label: "Refund Policy", href: "/refund-policy" },
+    { label: "Shipping Policy", href: "/shipping-policy" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
+    { label: "Terms of Service", href: "/terms-of-service" },
   ],
 };

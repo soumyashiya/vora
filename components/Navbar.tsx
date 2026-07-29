@@ -102,7 +102,7 @@ export default function Navbar() {
             <AccountButton />
             <CartButton />
             <Link
-              href="#products"
+              href="/shop"
               className="hidden items-center justify-center rounded-full border border-navy/30 bg-white px-7 py-3 text-[15px] font-semibold text-navy transition-all duration-500 ease-smooth hover:-translate-y-0.5 hover:bg-navy hover:text-ivory sm:flex"
             >
               Shop Now
@@ -176,7 +176,7 @@ export default function Navbar() {
               className="px-6 pt-10"
             >
               <Link
-                href="#products"
+                href="/shop"
                 onClick={() => setOpen(false)}
                 className="btn-lime w-full justify-between"
               >

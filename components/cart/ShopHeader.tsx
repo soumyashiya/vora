@@ -5,7 +5,13 @@ import { FiArrowLeft, FiShoppingBag } from "react-icons/fi";
 import BrandLogo from "@/components/ui/BrandLogo";
 import { useCart } from "@/components/cart/CartContext";
 
-export default function ShopHeader() {
+export default function ShopHeader({
+  backHref = "/shop",
+  backLabel = "Back to Shop",
+}: {
+  backHref?: string;
+  backLabel?: string;
+}) {
   const { count, ready } = useCart();
   return (
     <header className="sticky top-0 z-50 border-b border-sand/70 bg-ivory/90 backdrop-blur-xl">
@@ -14,10 +20,10 @@ export default function ShopHeader() {
 
         <div className="flex items-center gap-3">
           <Link
-            href="/#products"
+            href={backHref}
             className="hidden items-center gap-2 text-[15px] font-medium text-navy/80 transition-colors hover:text-navy sm:flex"
           >
-            <FiArrowLeft size={16} /> Back to Shop
+            <FiArrowLeft size={16} /> {backLabel}
           </Link>
           <Link
             href="/cart"
