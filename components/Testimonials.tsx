@@ -37,7 +37,7 @@ export default function Testimonials() {
     <section id="verify" className="section-pad relative overflow-hidden bg-ivory">
       <div className="absolute inset-0 topo-grid opacity-50" />
       <div className="container-x relative">
-        <SectionHeading eyebrow="Verification" title="Trusted Through Testing" />
+        <SectionHeading eyebrow="Verification" title="What Researchers Say" />
       </div>
 
       <div className="group relative mt-16 flex overflow-hidden">

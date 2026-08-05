@@ -33,10 +33,6 @@ export const IMG = {
   nad: "/images/products/nad.jpeg",
   app: `${ALLUVI}/Holding-iPhone_1Holding-iPhone.webp`,
 
-  work1: "/images/update-img/synthesis-seo.webp",
-  work2: "/images/update-img/02-option-2.png",
-  work3: "/images/update-img/03-option-3.png",
-  work4: "/images/update-img/verified-seo.webp",
   fac1: "/images/update-img/synthesis-seo.webp",
   fac2: "/images/update-img/fill-seo.webp",
   fac3: "/images/update-img/hplc-seo.webp",
@@ -133,7 +129,6 @@ export const STEPS = [
     id: "STEP 01",
     title: "Synthesis & Sourcing",
     desc: "Research-grade APIs are synthesised and sourced to strict specification, then logged with full batch traceability from day one.",
-    img: IMG.work1,
     points: [
       "APIs sourced to exact specification",
       "Full batch traceability recorded",
@@ -144,7 +139,6 @@ export const STEPS = [
     id: "STEP 02",
     title: "Fill & Formulation",
     desc: "Our own solution process fills each research format to a precise concentration inside a controlled environment built to protect the compound.",
-    img: IMG.work2,
     points: [
       "Exact concentration per unit",
       "Controlled fill environment",
@@ -155,7 +149,6 @@ export const STEPS = [
     id: "STEP 03",
     title: "Purity & Potency Analysis",
     desc: "Analytical HPLC testing confirms purity percentage and verified content before any batch is approved for release.",
-    img: IMG.work3,
     points: [
       "HPLC purity confirmed",
       "Verified content measured",
@@ -166,7 +159,6 @@ export const STEPS = [
     id: "STEP 04",
     title: "Independent Verification",
     desc: "Representative samples are sent to Janoshik for independent certification, and every certificate of analysis is published.",
-    img: IMG.work4,
     points: [
       "Independent Janoshik testing",
       "Certificate of analysis issued",

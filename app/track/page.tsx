@@ -1,8 +1,9 @@
 "use client";
 
 import { Suspense, useCallback, useEffect, useState } from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
-import { FiSearch, FiLoader, FiPackage, FiTruck } from "react-icons/fi";
+import { FiSearch, FiLoader, FiPackage, FiTruck, FiMail, FiHash, FiUser } from "react-icons/fi";
 import { useSearchParams } from "next/navigation";
 import ShopHeader from "@/components/cart/ShopHeader";
 import Footer from "@/components/Footer";
@@ -69,10 +70,14 @@ function TrackOrder() {
   const order = data?.order;
 
   return (
-    <main className="min-h-screen bg-ivory">
+    <main className="flex min-h-screen flex-col bg-ivory">
       <ShopHeader />
 
-      <div className="container-x py-12 lg:py-16">
+      <div
+        className={`container-x flex flex-1 flex-col py-12 lg:py-16 ${
+          order ? "" : "justify-center"
+        }`}
+      >
         <h1 className="font-serif text-4xl text-navy lg:text-5xl">Track your order</h1>
         <p className="mt-3 text-navy/60">
           Enter your order number to see its status and details.
@@ -109,6 +114,54 @@ function TrackOrder() {
               <FiPackage size={22} />
             </span>
             <p className="mt-4 text-navy/70">{error}</p>
+          </div>
+        )}
+
+        {!loading && !error && !order && (
+          <div className="mt-14 flex flex-col items-center rounded-[28px] border border-sand bg-white px-6 py-16 text-center sm:py-20">
+            <span className="grid h-16 w-16 place-items-center rounded-full bg-beige text-navy/60">
+              <FiPackage size={26} />
+            </span>
+            <p className="mt-6 font-serif text-2xl text-navy sm:text-3xl">
+              No order looked up yet
+            </p>
+            <p className="mt-2 max-w-sm text-navy/55">
+              Enter the order number from your confirmation email above to see its status,
+              items and delivery details.
+            </p>
+
+            <div className="mt-10 grid w-full max-w-xl gap-4 border-t border-sand pt-10 sm:grid-cols-3">
+              <div className="flex flex-col items-center gap-2 text-center">
+                <span className="grid h-11 w-11 place-items-center rounded-full bg-beige text-navy/70">
+                  <FiMail size={17} />
+                </span>
+                <p className="text-[13px] text-navy/55">
+                  Check your inbox for the confirmation email
+                </p>
+              </div>
+              <div className="flex flex-col items-center gap-2 text-center">
+                <span className="grid h-11 w-11 place-items-center rounded-full bg-beige text-navy/70">
+                  <FiHash size={17} />
+                </span>
+                <p className="text-[13px] text-navy/55">
+                  Order numbers look like ORD-20250101-120000000-ABC123
+                </p>
+              </div>
+              <div className="flex flex-col items-center gap-2 text-center">
+                <span className="grid h-11 w-11 place-items-center rounded-full bg-beige text-navy/70">
+                  <FiUser size={17} />
+                </span>
+                <p className="text-[13px] text-navy/55">
+                  Signed in?{" "}
+                  <Link
+                    href="/account"
+                    className="font-semibold text-navy underline-offset-4 hover:underline"
+                  >
+                    View orders in your account
+                  </Link>
+                </p>
+              </div>
+            </div>
           </div>
         )}
 

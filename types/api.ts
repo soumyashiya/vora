@@ -193,6 +193,51 @@ export interface OrderDetailResponse {
 }
 
 /* ------------------------------------------------------------------ */
+/* Payment Capture (manual bank-transfer flow)                         */
+/* ------------------------------------------------------------------ */
+
+export interface PaymentCaptureBank {
+  payeeName: string;
+  sortCode: string;
+  accountNumber: string;
+  reference: string;
+}
+
+export interface PaymentCaptureValidateResponse {
+  ok: true;
+  order: OrderRow;
+  items: OrderItemRow[];
+  payments: PaymentRow[];
+  allowPromo: boolean;
+  bank: PaymentCaptureBank;
+}
+
+export interface PaymentCaptureApplyPromoResponse {
+  ok: true;
+  promoCode: string;
+  promoDiscountPercent: number;
+  discountAmount: number;
+  total: number;
+}
+
+export type PaymentCaptureStatus = "received" | "rejected" | "pending";
+
+export interface PaymentCaptureUploadResponse {
+  ok: true;
+  screenshotUrl: string;
+  screenshotFilename: string;
+  verification: {
+    verdict?: {
+      decision: "approved" | "rejected";
+      probability: number;
+      reasons: string[];
+    };
+  } | null;
+  verification_error?: string;
+  payment_status: PaymentCaptureStatus;
+}
+
+/* ------------------------------------------------------------------ */
 /* Newsletter                                                          */
 /* ------------------------------------------------------------------ */
 

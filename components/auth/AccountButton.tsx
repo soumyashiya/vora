@@ -35,9 +35,42 @@ export default function AccountButton({ dark = false }: { dark?: boolean }) {
 
   if (!isAuthenticated || !user) {
     return (
-      <Link href="/login" aria-label="Sign in" className={btnCls}>
-        <FiUser size={18} />
-      </Link>
+      <div className="relative" ref={ref}>
+        <button
+          aria-label="Account menu"
+          onClick={() => setOpen((o) => !o)}
+          className={btnCls}
+        >
+          <FiUser size={18} />
+        </button>
+
+        <AnimatePresence>
+          {open && (
+            <motion.div
+              initial={{ opacity: 0, y: 8, scale: 0.97 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 6, scale: 0.98 }}
+              transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
+              className="absolute right-0 top-[calc(100%+10px)] z-50 w-60 overflow-hidden rounded-2xl border border-sand bg-white p-2 shadow-[0_30px_80px_-40px_rgba(4,52,96,0.6)]"
+            >
+              <Link
+                href="/login"
+                onClick={() => setOpen(false)}
+                className="flex w-full items-center gap-2 rounded-xl px-3 py-2.5 text-left text-[15px] text-navy transition-colors hover:bg-beige"
+              >
+                <FiGrid size={16} /> Sign in for my orders
+              </Link>
+              <Link
+                href="/track"
+                onClick={() => setOpen(false)}
+                className="flex w-full items-center gap-2 rounded-xl px-3 py-2.5 text-left text-[15px] text-navy transition-colors hover:bg-beige"
+              >
+                <FiPackage size={16} /> Track an order
+              </Link>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
     );
   }
 

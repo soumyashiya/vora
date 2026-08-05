@@ -88,7 +88,7 @@ export default function About() {
               />
 
               <div className="ab-cta">
-                <LimeButton href="#process">More About Our Process</LimeButton>
+                <LimeButton href="#capabilities">More About Our Process</LimeButton>
               </div>
             </div>
           </div>
