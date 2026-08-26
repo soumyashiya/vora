@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import ClientsBar from "@/components/ClientsBar";
@@ -10,6 +12,13 @@ import Marquee from "@/components/Marquee";
 import Team from "@/components/Team";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = pageMetadata({
+  path: "/",
+  title: "Premium Research Peptides for Laboratory R&D",
+  description:
+    "Vora Labs supplies premium research peptides for laboratory R&D. Janoshik tested, 99%+ HPLC verified, batch COA included. Research use only.",
+});
 
 export default function Home() {
   return (

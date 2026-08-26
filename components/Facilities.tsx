@@ -52,20 +52,20 @@ export default function Facilities() {
   return (
     <section
       id="capabilities"
-      className="relative overflow-x-clip bg-navy py-24 lg:py-32"
+      className="relative overflow-x-clip bg-navy py-20 lg:py-24"
     >
       <div className="container-x">
-        <div className="relative lg:pb-[26vh]">
+        <div className="relative lg:pb-[18vh]">
           {/* Sticky centred title — stays put while the cards scroll over it */}
           <div className="z-0 lg:sticky lg:top-[44vh] lg:h-0">
-            <div className="mb-14 flex flex-col items-center gap-6 text-center lg:mb-0 lg:-translate-y-1/2">
+            <div className="mb-10 flex flex-col items-center gap-5 text-center lg:mb-0 lg:-translate-y-1/2">
               <Eyebrow>Capabilities</Eyebrow>
               <h2 className="display-2 font-serif text-lime">Inside The Lab</h2>
             </div>
           </div>
 
           {/* Two edge columns with a wide centre channel for the title */}
-          <div className="relative z-10 grid grid-cols-1 gap-y-12 lg:grid-cols-2 lg:items-start lg:gap-x-[14%] lg:gap-y-16 lg:pt-[6vh]">
+          <div className="relative z-10 grid grid-cols-1 gap-y-10 lg:grid-cols-2 lg:items-start lg:gap-x-[14%] lg:gap-y-14 lg:pt-[2vh]">
             {/* render order swaps card 3 (HPLC) to the right column & 4 to the left */}
             {[0, 1, 3, 2, 4, 5].map((idx, i) => (
               <Card key={FACILITIES[idx].n} f={FACILITIES[idx]} i={i} />

@@ -70,7 +70,7 @@ export default function About() {
   );
 
   return (
-    <section id="about" className="section-pad relative overflow-hidden bg-ivory">
+    <section id="about" className="section-pad-sm relative overflow-hidden bg-ivory">
       <div ref={root} className="container-x relative">
         <div className="grid gap-12 lg:grid-cols-[0.8fr_1.6fr] lg:gap-16">
           <div className="flex flex-col justify-between gap-12">
@@ -88,7 +88,7 @@ export default function About() {
               />
 
               <div className="ab-cta">
-                <LimeButton href="#capabilities">More About Our Process</LimeButton>
+                <LimeButton href="/about">Explore More</LimeButton>
               </div>
             </div>
           </div>
@@ -96,17 +96,17 @@ export default function About() {
           <div>
             <ScrollReveal
               as="h2"
-              text="We develop, fill and independently verify premium research compounds, guided entirely by science."
-              className="display-2 max-w-[18ch] text-navy"
+              text="We develop, fill, and independently verify high-quality research compounds through a science-driven approach to testing and quality."
+              className="display-2-sm max-w-[24ch] text-navy"
             />
 
             <ScrollReveal
               as="p"
-              text="Every Vora Labs compound is synthesised, filled and independently verified before it leaves the lab so each batch arrives with documented purity, potency and stability you can confirm yourself."
-              className="mt-7 max-w-xl text-[18px] leading-relaxed"
+              text="Every Vora Labs compound is synthesized, filled, and independently verified before release, with each batch supported by documented purity, potency, and stability data you can review yourself."
+              className="mt-6 max-w-xl text-[17px] leading-relaxed"
             />
 
-            <div className="mt-14 grid gap-5 sm:grid-cols-2">
+            <div className="mt-10 grid gap-5 sm:grid-cols-2">
               <Reveal className="overflow-hidden rounded-[28px]">
                 <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[28px]">
                   <Image

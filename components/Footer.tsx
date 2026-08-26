@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
-import { LuShieldAlert } from "react-icons/lu";
 import { FOOTER_LINKS } from "@/lib/data";
 import BrandLogo from "@/components/ui/BrandLogo";
 import { subscribeNewsletter } from "@/services/newsletter.service";
@@ -41,7 +40,7 @@ export default function Footer() {
 
   return (
     <footer id="footer" className="bg-navy text-ivory">
-      <div className="container-x py-20 lg:py-28">
+      <div className="container-x py-14 lg:py-20">
         <div className="grid gap-14 lg:grid-cols-[1.3fr_1fr_1fr] lg:gap-10">
           {/* Brand */}
           <div>
@@ -53,14 +52,9 @@ export default function Footer() {
             </h3>
             <p className="mt-5 max-w-md text-ivory/65">
               Vora Labs develops, fills and independently verifies premium
-              research peptides for controlled laboratory R&amp;D every batch
-              backed by a Janoshik certificate of analysis.
+              research peptides for controlled laboratory R&amp;D, with every
+              batch backed by a Janoshik certificate of analysis.
             </p>
-            <div className="mt-7 flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-[13px] text-ivory/70">
-              <LuShieldAlert size={18} className="flex-none text-lime" />
-              Vora Labs does not operate on any social media. Order only via the
-              official site beware of impersonators.
-            </div>
           </div>
 
           {/* Quick links */}
@@ -137,7 +131,7 @@ export default function Footer() {
               </p>
             )}
             <div className="mt-8 space-y-2 text-ivory/65">
-              <p>research@voralabs.com</p>
+              <p>support@voralabs.com</p>
               <p>Independent Janoshik verification</p>
               <p>99%+ HPLC verified purity</p>
             </div>
@@ -153,8 +147,8 @@ export default function Footer() {
         <div className="mt-6 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-[13px] text-ivory/55 sm:flex-row">
           <p>© {new Date().getFullYear()} Vora Labs. All rights reserved.</p>
           <p className="uppercase tracking-[0.14em]">
-            For laboratory R&amp;D use only not for human or veterinary
-            consumption
+            For laboratory R&amp;D use only. Not for human or veterinary
+            consumption.
           </p>
         </div>
       </div>

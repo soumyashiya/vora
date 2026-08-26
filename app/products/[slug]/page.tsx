@@ -1,9 +1,11 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FiArrowUpRight, FiCheck } from "react-icons/fi";
 import { LuLeaf } from "react-icons/lu";
 import { getProduct, relatedProducts, PRODUCTS } from "@/lib/products";
+import { pageMetadata, PRODUCT_SEO } from "@/lib/seo";
 import ShopHeader from "@/components/cart/ShopHeader";
 import ProductGallery from "@/components/cart/ProductGallery";
 import AddToCart from "@/components/cart/AddToCart";
@@ -19,12 +21,19 @@ export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string }>;
-}) {
+}): Promise<Metadata> {
   const { slug } = await params;
   const product = getProduct(slug);
-  return {
-    title: product ? `${product.name} — Vora Labs` : "Product — Vora Labs",
-  };
+  if (!product) {
+    return { title: "Product — Vora Labs" };
+  }
+
+  const seo = PRODUCT_SEO[slug];
+  return pageMetadata({
+    path: `/products/${slug}`,
+    title: seo?.title ?? `${product.name} — Vora Labs`,
+    description: seo?.description ?? product.description,
+  });
 }
 
 export default async function ProductPage({
@@ -37,6 +46,7 @@ export default async function ProductPage({
   if (!product) notFound();
 
   const related = relatedProducts(slug);
+  const heading = PRODUCT_SEO[slug]?.h1 ?? product.name;
 
   return (
     <main className="min-h-screen bg-ivory">
@@ -68,8 +78,13 @@ export default async function ProductPage({
               {product.category}
             </span>
             <h1 className="mt-5 font-serif text-4xl leading-tight text-navy lg:text-5xl">
-              {product.name}
+              {heading}
             </h1>
+            {heading !== product.name && (
+              <p className="mt-3 font-serif text-2xl text-navy/70">
+                {product.name}
+              </p>
+            )}
             <p className="mt-4 max-w-md text-[17px] leading-relaxed text-navy/70">
               {product.tagline}
             </p>
@@ -147,7 +162,7 @@ export default async function ProductPage({
               <div className="mt-6 overflow-hidden rounded-2xl border border-sand">
                 <table className="w-full text-left text-[14px]">
                   <thead>
-                    <tr className="bg-beige text-[11px] font-semibold uppercase tracking-[0.14em] text-navy/60">
+                    <tr className="bg-beige text-[12px] font-semibold uppercase tracking-[0.14em] text-navy/60">
                       <th className="px-4 py-3">Compound</th>
                       <th className="px-4 py-3">Concentration</th>
                       <th className="px-4 py-3">Verified Content</th>
@@ -261,7 +276,7 @@ export default async function ProductPage({
 function StatCard({ label, value }: { label: string; value: string }) {
   return (
     <div className="rounded-xl border border-sand bg-beige/40 p-4">
-      <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-navy/50">
+      <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-navy/50">
         {label}
       </p>
       <p className="mt-1.5 font-serif text-lg text-navy">{value}</p>

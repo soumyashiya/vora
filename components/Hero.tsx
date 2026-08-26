@@ -7,7 +7,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import SplitType from "split-type";
-import { FiArrowUpRight } from "react-icons/fi";
 import { IMG, AVATARS } from "@/lib/data";
 import { LimeButton } from "./ui/Bits";
 
@@ -88,7 +87,7 @@ export default function Hero() {
             priority
             quality={95}
             sizes="100vw"
-            className="object-cover object-center"
+            className="object-cover object-[78%_center] sm:object-center"
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-navy/85 via-navy/40 to-navy/5" />
@@ -123,29 +122,22 @@ export default function Hero() {
 
           {/* Headline block */}
           <div className="mt-auto max-w-5xl">
-            <h1 className="display-1 font-serif text-ivory">
-              Research Peptides Built On Proof
+            <h1 className="display-1-sm font-serif text-ivory">
+              Premium Research Peptides for Laboratory R&amp;D
             </h1>
 
             <div className="mt-7 flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-xl">
                 <p className="hero-fade text-lg text-ivory/85">
-                  Vora Labs develops, fills and independently verifies premium
-                  research peptides for controlled laboratory R&amp;D.
+                  Vora Labs Research-Grade Peptides Independently Verified for
+                  Quality &amp; Purity
                 </p>
                 <div className="hero-fade mt-7 flex flex-wrap items-center gap-3">
-                  <LimeButton href="#products">Browse Compounds</LimeButton>
-                  <a
-                    href="#verify"
-                    className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-6 py-3 font-semibold text-ivory backdrop-blur-sm transition-all duration-500 ease-smooth hover:-translate-y-0.5 hover:bg-white/20"
-                  >
-                    View Lab Reports
-                    <FiArrowUpRight size={16} />
-                  </a>
+                  <LimeButton href="#products">Browse peptides</LimeButton>
                 </div>
                 <p className="hero-fade mt-6 text-[12px] uppercase tracking-[0.16em] text-ivory/55">
-                  For laboratory R&amp;D use only · Not for human or veterinary
-                  consumption
+                  For laboratory use only. Not intended for human or veterinary
+                  consumption.
                 </p>
               </div>
             </div>

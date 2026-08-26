@@ -95,7 +95,7 @@ export default function Preloader() {
             <span className="text-3xl font-extrabold tracking-tight text-ivory">
               VORA
             </span>
-            <span className="mt-1 text-[11px] font-semibold uppercase tracking-[0.36em] text-ivory/55">
+            <span className="mt-1 text-[12px] font-semibold uppercase tracking-[0.36em] text-ivory/55">
               Labs
             </span>
           </span>
@@ -108,7 +108,7 @@ export default function Preloader() {
           />
         </div>
         <div className="relative mt-5 flex w-56 items-center justify-between text-ivory/60">
-          <span className="text-[11px] uppercase tracking-[0.2em]">Loading</span>
+          <span className="text-[12px] uppercase tracking-[0.2em]">Loading</span>
           <span className="font-serif text-lg tabular-nums text-ivory">{pct}%</span>
         </div>
       </motion.div>

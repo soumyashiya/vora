@@ -45,10 +45,10 @@ export default function ProductCard({ product, index = 0 }: { product: Product; 
             sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw"
             className="object-cover transition-transform duration-[1.2s] ease-smooth group-hover:scale-105"
           />
-          <span className="absolute left-4 top-4 rounded-full bg-white/90 px-3.5 py-1.5 text-[11px] font-semibold uppercase tracking-[0.08em] text-navy backdrop-blur-sm">
+          <span className="absolute left-4 top-4 rounded-full bg-white/90 px-3.5 py-1.5 text-[12px] font-semibold uppercase tracking-[0.08em] text-navy backdrop-blur-sm">
             {product.id}
           </span>
-          <span className="absolute right-4 top-4 rounded-full bg-navy/90 px-3.5 py-1.5 text-[11px] font-semibold uppercase tracking-[0.08em] text-lime backdrop-blur-sm">
+          <span className="absolute right-4 top-4 rounded-full bg-navy/90 px-3.5 py-1.5 text-[12px] font-semibold uppercase tracking-[0.08em] text-lime backdrop-blur-sm">
             R&amp;D Only
           </span>
         </div>

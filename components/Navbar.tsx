@@ -29,7 +29,7 @@ function CartButton({ dark = false }: { dark?: boolean }) {
         <span
           aria-hidden
           className={cn(
-            "absolute -right-1 -top-1 grid min-w-[20px] h-5 place-items-center rounded-full px-1 text-[11px] font-semibold leading-none ring-2",
+            "absolute -right-1 -top-1 grid min-w-[20px] h-5 place-items-center rounded-full px-1 text-[12px] font-semibold leading-none ring-2",
             dark
               ? "bg-lime text-navy ring-navy"
               : "bg-navy text-ivory ring-white"
@@ -102,7 +102,7 @@ export default function Navbar() {
             <AccountButton />
             <CartButton />
             <Link
-              href="/shop"
+              href="/products"
               className="hidden items-center justify-center rounded-full border border-navy/30 bg-white px-7 py-3 text-[15px] font-semibold text-navy transition-all duration-500 ease-smooth hover:-translate-y-0.5 hover:bg-navy hover:text-ivory sm:flex"
             >
               Shop Now
@@ -176,7 +176,7 @@ export default function Navbar() {
               className="px-6 pt-10"
             >
               <Link
-                href="/shop"
+                href="/products"
                 onClick={() => setOpen(false)}
                 className="btn-lime w-full justify-between"
               >

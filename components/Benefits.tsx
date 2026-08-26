@@ -69,7 +69,7 @@ export default function Benefits() {
     <section
       id="why"
       ref={root}
-      className="relative flex flex-col overflow-hidden bg-ivory py-20 lg:min-h-screen lg:justify-center"
+      className="relative flex flex-col overflow-hidden bg-ivory pb-10 pt-20 lg:min-h-screen lg:justify-center"
     >
       <div className="absolute inset-0 topo-grid opacity-60" />
       <div className="container-x relative">

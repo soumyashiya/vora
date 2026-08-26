@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { FiArrowUpRight } from "react-icons/fi";
 import { IMG } from "@/lib/data";
 import SplitReveal from "./ui/SplitReveal";
 import { LimeButton } from "./ui/Bits";
@@ -37,8 +36,9 @@ export default function CTA() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="max-w-xl text-lg text-ivory/80"
           >
-            Research-grade compounds, independent verification, scheduled supply and
-            precision pens one connected system for controlled R&amp;D.
+            Research-grade compounds, independent testing, reliable supply, and
+            precision pen formats, all integrated into one system for controlled
+            laboratory R&amp;D.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -48,13 +48,6 @@ export default function CTA() {
             className="flex flex-wrap items-center justify-center gap-3"
           >
             <LimeButton href="#products">Shop Compounds</LimeButton>
-            <a
-              href="#footer"
-              className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-6 py-3 font-semibold text-ivory backdrop-blur-sm transition-all duration-500 ease-smooth hover:-translate-y-0.5 hover:bg-white/20"
-            >
-              Talk To Our Team
-              <FiArrowUpRight size={16} />
-            </a>
           </motion.div>
         </div>
       </div>

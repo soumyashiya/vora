@@ -44,7 +44,8 @@ export default function OrderPlacedModal({ open, orderId, email }: Props) {
               Order Placed
             </h2>
             <p className="mt-3 text-[15px] text-navy/65">
-              Thank you, your research order has been received
+              Thank you,
+               your research order has been received
               {email ? (
                 <>
                   {" "}

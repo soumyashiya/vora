@@ -5,12 +5,10 @@ export const COMPLIANCE =
   "For laboratory research & development use only · Not for human or veterinary consumption";
 
 export const NAV_LINKS = [
-  { label: "Home", href: "#top" },
-  { label: "Shop", href: "/shop" },
-  { label: "About", href: "#about" },
-  { label: "Why Us", href: "#why" },
-  { label: "Testimonial", href: "#verify" },
-  { label: "Contact", href: "#footer" },
+  { label: "Home", href: "/#top" },
+  { label: "Shop", href: "/products" },
+  { label: "About", href: "/about" },
+  { label: "Why Us", href: "/why-us" },
 ];
 
 const ALLUVI = "https://alluvi.bz/images";
@@ -107,19 +105,19 @@ export const PRODUCTS = [
 export const BENEFITS = [
   {
     title: "Independent Testing",
-    desc: "Every batch is HPLC analysed through Janoshik before release, with a certificate of analysis you can verify yourself.",
+    desc: "Every batch is HPLC analyzed by Janoshik before release and accompanied by a certificate of analysis you can independently review.",
   },
   {
-    title: "Batch Traceability",
-    desc: "Each unit carries a unique batch reference tied to its own Janoshik certificate and Certificate of Analysis.",
+    title: "Cold Chain Delivery",
+    desc: "Temperature-controlled handling from filling through dispatch helps maintain documented product quality and stability throughout transit.",
   },
   {
-    title: "Formulation Stability",
-    desc: "Our in-house solution process holds verified purity and pH for 56 days at controlled room temperature.",
+    title: "Pen Stability",
+    desc: "Our in-house formulation process maintains documented stability for up to 56 days at room temperature, outperforming conventional vial formats.",
   },
   {
-    title: "Quality Assurance",
-    desc: "Multi-stage QA covers identity, purity, potency and stability against a defined specification on every release.",
+    title: "Tracked UK Shipping",
+    desc: "Discreet, fully tracked USA dispatch with batch-level traceability on every order.",
   },
 ];
 
@@ -355,14 +353,11 @@ export const TRUST_ITEMS = [
 export const FOOTER_LINKS = {
   quick: [
     { label: "Home", href: "/#top" },
-    { label: "Shop", href: "/shop" },
-    { label: "About", href: "/#about" },
-    { label: "Products", href: "/#products" },
-    { label: "Why Us", href: "/#why" },
-    { label: "Testimonials", href: "/#verify" },
-    { label: "Capabilities", href: "/#capabilities" },
+    { label: "Shop", href: "/products" },
+    { label: "About", href: "/about" },
+    { label: "Products", href: "/products" },
+    { label: "Why Us", href: "/why-us" },
     { label: "Cart", href: "/cart" },
-    { label: "Contact", href: "/#footer" },
   ],
   utility: [
     { label: "Press Release", href: "/press-release" },
@@ -370,5 +365,6 @@ export const FOOTER_LINKS = {
     { label: "Shipping Policy", href: "/shipping-policy" },
     { label: "Privacy Policy", href: "/privacy-policy" },
     { label: "Terms of Service", href: "/terms-of-service" },
+    { label: "Wholesale Enquiries", href: "/wholesale" },
   ],
 };

@@ -6,6 +6,7 @@ import { CartProvider } from "@/components/cart/CartContext";
 import { AuthProvider } from "@/hooks/useAuth";
 import { ToastProvider } from "@/components/ui/Toast";
 import Preloader from "@/components/Preloader";
+import { SITE_URL } from "@/lib/seo";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -28,7 +29,10 @@ export const viewport: Viewport = {
   themeColor: "#FFFBF3",
 };
 
+// Fallback metadata for routes that do not declare their own (cart, checkout,
+// account, tracking, auth). Sheet-managed pages override this per route.
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Vora Labs — Premium Research Peptides for Laboratory R&D",
   description:
     "Vora Labs develops, fills and independently verifies premium research peptides for controlled laboratory R&D. Janoshik tested, 99%+ HPLC verified purity, batch-level Certificate of Analysis on every release. Research use only — not for human or veterinary consumption.",

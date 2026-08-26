@@ -72,7 +72,7 @@ export default function JanoshikReportModal({
               {/* Header */}
               <div className="flex flex-none items-center justify-between gap-4 border-b border-sand bg-white/80 px-5 py-4 sm:px-7">
                 <div className="min-w-0">
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-navy/50">
+                  <p className="text-[12px] font-semibold uppercase tracking-[0.18em] text-navy/50">
                     Janoshik Analytical Report
                   </p>
                   <p className="mt-0.5 truncate font-serif text-lg text-navy sm:text-xl">
@@ -109,7 +109,7 @@ export default function JanoshikReportModal({
 
                   {sampleImages.length > 0 && (
                     <>
-                      <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-navy/50">
+                      <p className="text-[12px] font-semibold uppercase tracking-[0.18em] text-navy/50">
                         Attached Sample Photos
                       </p>
                       {sampleImages.map((src, i) => (

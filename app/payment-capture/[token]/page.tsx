@@ -176,10 +176,10 @@ export default function PaymentCapturePage() {
           <p className="mt-8 text-[13px] text-navy/45">
             Need help? Email{" "}
             <a
-              href="mailto:research@voralabs.com"
+              href="mailto:support@voralabs.com"
               className="font-semibold text-navy underline-offset-4 hover:underline"
             >
-              research@voralabs.com
+              support@voralabs.com
             </a>
           </p>
         </div>
@@ -502,7 +502,7 @@ function BankRow({
           <Icon size={16} />
         </span>
         <div className="min-w-0">
-          <p className="text-[11px] uppercase tracking-wider text-navy/50">{label}</p>
+          <p className="text-[12px] uppercase tracking-wider text-navy/50">{label}</p>
           <p
             className={cn(
               "truncate text-[15px] font-semibold text-navy",

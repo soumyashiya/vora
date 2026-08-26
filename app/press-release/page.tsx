@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { PRESS_RELEASE } from "@/lib/policies";
+import { pageMetadata } from "@/lib/seo";
 import PolicyPage from "@/components/policy/PolicyPage";
 
-export const metadata: Metadata = {
-  title: "Press Release — Vora Labs",
+export const metadata: Metadata = pageMetadata({
+  path: "/press-release",
+  title: "Research Peptides, COAs & Quality Assurance",
   description:
-    "Official statements from Vora Labs on our research-only status, regulatory standing, and brand protection.",
-};
+    "Official public statement regarding recent news coverage, research peptides, research compounds, Vora Lab testing.",
+});
 
 export default function PressReleasePage() {
   return <PolicyPage content={PRESS_RELEASE} />;

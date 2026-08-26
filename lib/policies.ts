@@ -19,7 +19,7 @@ export type PolicyContent = {
 const CONTACT: PolicySection = {
   heading: "Contact Us",
   body: "For any questions regarding this policy, please reach out to our team:",
-  note: "Email: research@voralabs.com · Website: voralabs.com",
+  note: "Email: support@voralabs.com · Website: voralabs.com",
 };
 
 export const PRESS_RELEASE: PolicyContent = {
@@ -36,7 +36,7 @@ export const PRESS_RELEASE: PolicyContent = {
     },
     {
       heading: "No Social Media Presence",
-      body: "Vora Labs does not operate on any social media platform. Any account, page, or individual claiming to represent Vora Labs on social media is unauthorised and should be treated as a potential scam. Please verify any communication directly through research@voralabs.com before making a payment.",
+      body: "Vora Labs does not operate on any social media platform. Any account, page, or individual claiming to represent Vora Labs on social media is unauthorised and should be treated as a potential scam. Please verify any communication directly through support@voralabs.com before making a payment.",
     },
     {
       heading: "Research-Only Positioning",
@@ -96,7 +96,7 @@ export const REFUND_POLICY: PolicyContent = {
     },
     {
       heading: "Reporting Issues",
-      body: "If your order arrives damaged, incorrect, or defective, please contact our support team at research@voralabs.com within 48 hours of delivery. Include your order number, a description of the issue, and supporting photos.",
+      body: "If your order arrives damaged, incorrect, or defective, please contact our support team at support@voralabs.com within 48 hours of delivery. Include your order number, a description of the issue, and supporting photos.",
     },
     {
       heading: "Return Approval",
@@ -111,7 +111,7 @@ export const REFUND_POLICY: PolicyContent = {
       body: "If you haven't received your refund after 10 business days:",
       list: [
         "First, check with your bank or card provider.",
-        "Then contact us at research@voralabs.com for assistance.",
+        "Then contact us at support@voralabs.com for assistance.",
       ],
     },
     CONTACT,
@@ -122,48 +122,51 @@ export const SHIPPING_POLICY: PolicyContent = {
   slug: "shipping-policy",
   title: "Shipping Policy",
   eyebrow: "Dispatch & Delivery",
-  updated: "July 29, 2026",
+  updated: "August 25, 2026",
   intro:
-    "This Shipping Policy explains how orders placed on voralabs.com are processed, dispatched, and delivered.",
+    "This Shipping Policy explains how orders placed with Vora Labs are processed, dispatched, tracked, and delivered.",
   sections: [
     {
       heading: "Dispatch Time",
-      body: "Orders placed and paid for before 3pm on working days are typically dispatched the same day. Orders received after 3pm, or on weekends and public holidays, are dispatched the next working day.",
+      body: "Orders placed and paid for before 3 PM (US Eastern Time) on business days are typically processed for same-day dispatch. Orders received after 3 PM, on weekends, or on US public holidays are processed on the next business day.",
     },
     {
       heading: "Shipping Carriers",
-      body: "We use tracked, signed-for courier services depending on destination, weight, and service availability. Once your order ships, you'll receive tracking information by email.",
+      body: "We use trusted, trackable shipping services based on destination and availability. Tracking information is provided once your order has been dispatched.",
     },
     {
       heading: "Delivery Times",
-      list: [
-        "Domestic Orders: typically delivered 1–3 working days after dispatch.",
-        "International Orders: delivery times vary by destination and customs handling, usually 3–10 working days.",
-      ],
+      list: ["US Orders: Typically delivered within 1–3 business days after dispatch."],
+      note: "Delivery estimates may vary due to carrier delays, weather, holidays, or other circumstances outside our control.",
     },
     {
       heading: "Shipping Fees",
-      body: "Shipping costs are calculated at checkout based on your destination and parcel weight. We occasionally run free-shipping promotions.",
+      body: "Shipping charges are calculated and displayed at checkout based on your delivery address and selected shipping service.",
     },
     {
       heading: "Order Tracking",
-      body: "Every shipment includes tracking. You'll receive a tracking number as soon as your parcel leaves our fulfilment centre.",
+      body: "All shipments include tracking. Once your package leaves our fulfillment facility, you will receive tracking information.",
     },
     {
       heading: "Failed Delivery Attempts",
-      body: "If no one is available to accept the parcel, the courier may leave a calling card or attempt redelivery. Please follow up with the courier directly using your tracking number.",
-    },
-    {
-      heading: "Customs & Import Duties",
-      body: "International buyers are responsible for any applicable customs duties, taxes, or import fees. These charges are not included in our product or shipping prices.",
+      body: "If delivery cannot be completed, the carrier may attempt redelivery or provide instructions for collection. Customers should use the tracking information to coordinate directly with the carrier when necessary.",
     },
     {
       heading: "Delivery Issues",
-      body: "If your parcel is delayed, lost, or arrives damaged, please contact us at research@voralabs.com within 72 hours of the expected delivery date. Include your order number and tracking details.",
+      body: "If your package is delayed, lost, or arrives damaged, please contact us at support@voralabs.com with your order number and tracking information.",
+      note: "For damaged shipments, photographs of the package and contents may be requested.",
     },
     {
       heading: "Address Accuracy",
-      body: "Please ensure your delivery details are entered correctly at checkout. We cannot be held responsible for delivery issues resulting from incorrect or incomplete address information.",
+      body: "Please ensure your shipping information is accurate and complete before placing your order. Vora Labs is not responsible for delivery issues caused by incorrect or incomplete addresses provided at checkout.",
+    },
+    {
+      heading: "Shipping Restrictions",
+      body: "Customers are responsible for ensuring that their purchase and intended research use comply with applicable federal, state, and local laws and regulations. Vora Labs reserves the right to restrict or cancel shipments where required by law.",
+    },
+    {
+      heading: "Research Use Notice",
+      body: "Vora Labs products are supplied for laboratory research and R&D use only and are not intended for human or veterinary consumption.",
     },
     CONTACT,
   ],
@@ -231,7 +234,7 @@ export const PRIVACY_POLICY: PolicyContent = {
         "Object to certain processing activities",
         "Withdraw consent at any time",
       ],
-      note: "To exercise your rights, contact research@voralabs.com.",
+      note: "To exercise your rights, contact support@voralabs.com.",
     },
     {
       heading: "Cookies",
@@ -253,54 +256,64 @@ export const TERMS_OF_SERVICE: PolicyContent = {
   slug: "terms-of-service",
   title: "Terms of Service",
   eyebrow: "Legal",
-  updated: "July 29, 2026",
+  updated: "August 25, 2026",
   intro:
-    'You are using the official website of Vora Labs ("we", "us", "our"). By using this site, you agree to comply with the following terms. Please read them carefully — if you do not agree with any part of these terms, please do not use our website or services.',
+    "You are using the official website of Vora Labs (“we,” “us,” “our”). By accessing or using this website, you agree to these Terms of Service. If you do not agree with any part of these Terms, please do not use our website or services.",
   sections: [
     {
       heading: "General",
-      body: "These Terms govern your use of voralabs.com. We may update these Terms from time to time without notice. Continued use of the website constitutes acceptance of the current Terms.",
+      body: "These Terms govern your use of the Vora Labs website. We may update these Terms from time to time. Your continued use of the website after changes are posted constitutes acceptance of the updated Terms.",
     },
     {
       heading: "Age Requirement",
-      body: "By accessing this site, you confirm that you are at least 18 years old and are legally able to enter into contracts. Our products and services are intended only for individuals who meet this requirement.",
+      body: "You must be at least 18 years old to access this website or place an order. By using our website, you confirm that you meet this requirement and are legally permitted to enter into a purchase agreement.",
     },
     {
       heading: "Product Use",
-      body: "Products sold on voralabs.com are supplied strictly for research and development purposes under controlled conditions. They are not to be used for diagnosis, treatment, or prevention of any disease or medical condition.",
+      body: "Vora Labs products are supplied strictly for laboratory research and R&D purposes. They are not intended for human or veterinary consumption, self-administration, diagnosis, treatment, or prevention of any disease or medical condition.",
+      note: "Customers are responsible for ensuring that their intended use complies with applicable federal, state, and local laws.",
     },
     {
       heading: "Orders & Payment",
-      body: "All orders are subject to acceptance and availability. We reserve the right to refuse or cancel orders at our discretion. Payment must be made in full before orders are dispatched.",
+      body: "All orders are subject to product availability and acceptance. Vora Labs reserves the right to refuse, limit, or cancel an order where necessary. Payment must be completed before an order is dispatched.",
     },
     {
-      heading: "Dispatch & Delivery",
-      body: "We aim to dispatch orders within a reasonable timeframe. Shipping timelines are estimates, not guarantees, and may be affected by factors outside our control. See our Shipping Policy for details.",
+      heading: "Shipping & Delivery",
+      body: "We aim to process and dispatch orders within our stated processing timeframe. Delivery estimates may vary due to carrier delays, weather, holidays, or circumstances beyond our control. Customers are responsible for providing accurate shipping information.",
     },
     {
       heading: "Refund Policy",
-      body: "Due to the nature of our products, returns are only accepted for items that are unopened, unused, and in their original condition. Opened or tampered items are non-refundable. See our Refund Policy for full details.",
+      body: "Due to the nature of our products, returns are limited to eligible items that are unopened, unused, and in their original condition. Opened, damaged, or tampered-with products may not be eligible for a refund. Please refer to our Refund Policy for additional details.",
     },
     {
       heading: "Disclaimer",
-      body: "All products are sold solely for laboratory research and development. Vora Labs does not accept or condone misuse, including but not limited to human consumption, veterinary use, or resale.",
+      body: "Vora Labs products are supplied solely for laboratory R&D purposes. Vora Labs does not recommend or authorize human consumption, veterinary use, self-administration, or any use outside the stated research purpose.",
     },
     {
       heading: "Limitation of Liability",
-      body: "By using this site, you agree to indemnify and hold harmless Vora Labs, its team, and affiliates from any claims, damages, or liabilities arising from the use or misuse of our products under these Terms.",
+      body: "To the fullest extent permitted by applicable law, Vora Labs and its directors, employees, affiliates, and service providers are not liable for claims, damages, losses, or liabilities arising from unauthorized, improper, or unlawful use of our products or website.",
     },
     {
       heading: "Account Responsibility",
-      body: "If you create an account on our website, you are responsible for maintaining the confidentiality of your login credentials. All activity conducted under your account is your responsibility.",
+      body: "If you create an account, you are responsible for maintaining the confidentiality of your login credentials and for activity conducted through your account.",
     },
     {
       heading: "Intellectual Property",
-      body: "All trademarks, logos, and content displayed on voralabs.com are owned or licensed by Vora Labs. You may not reproduce, distribute, or commercially exploit any content without our prior written consent.",
+      body: "All trademarks, logos, text, images, graphics, product information, and other content displayed on the Vora Labs website are owned by or licensed to Vora Labs. No content may be reproduced, distributed, or commercially used without prior written permission.",
     },
     {
       heading: "Governing Law",
-      body: "These Terms are governed by the laws of the jurisdiction in which Vora Labs operates. Any disputes arising from these Terms will be subject to the exclusive jurisdiction of the competent courts.",
+      body: "These Terms are governed by the laws of the United States and, where applicable, the laws of the state in which Vora Labs is established. Any disputes will be handled in the appropriate courts having jurisdiction over the matter.",
     },
-    CONTACT,
+    {
+      // The Terms tab specifies its own contact wording rather than the shared CONTACT block
+      heading: "Contact",
+      body: "For questions regarding these Terms, contact:",
+      note: "Vora Labs · Email: support@voralabs.com",
+    },
+    {
+      heading: "Research Use Notice",
+      body: "For laboratory R&D use only. Not for human or veterinary consumption.",
+    },
   ],
 };

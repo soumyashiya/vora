@@ -199,9 +199,31 @@ body {
   line-height: 0.98;
   letter-spacing: -0.02em;
 }
+/* one step down from display-1, for longer hero headlines */
+.display-1-sm {
+  font-size: clamp(2.8rem, 7.4vw, 5.9rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+/* Phones only — the clamp() above floors at 2.8rem, which is too large below
+   ~605px and doesn't shrink further, wrapping long headlines into 5+ tall
+   lines. Desktop/tablet (640px+) keep the rule above, untouched. */
+@media (max-width: 640px) {
+  .display-1-sm {
+    font-size: clamp(2.15rem, 9vw, 2.8rem);
+    line-height: 1.05;
+  }
+}
 .display-2 {
   font-size: clamp(2.5rem, 6.2vw, 5rem);
   line-height: 1.04;
+  letter-spacing: -0.01em;
+}
+/* one step down from display-2, for long section headings */
+.display-2-sm {
+  font-size: clamp(2rem, 4.4vw, 3.5rem);
+  line-height: 1.08;
   letter-spacing: -0.01em;
 }
 .display-3 {

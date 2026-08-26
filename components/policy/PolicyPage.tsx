@@ -76,8 +76,8 @@ export default function PolicyPage({ content }: { content: PolicyContent }) {
               </div>
 
               <p className="mx-auto mt-10 max-w-2xl text-[12px] uppercase tracking-[0.14em] text-navy/45">
-                For laboratory R&amp;D use only — not for human or veterinary
-                consumption
+                For laboratory R&amp;D use only. Not for human or veterinary
+                consumption.
               </p>
             </div>
 
@@ -110,10 +110,10 @@ export default function PolicyPage({ content }: { content: PolicyContent }) {
                   Reach our research support team any time.
                 </p>
                 <a
-                  href="mailto:research@voralabs.com"
+                  href="mailto:support@voralabs.com"
                   className="mt-4 inline-block text-[15px] font-medium text-lime hover:underline"
                 >
-                  research@voralabs.com
+                  support@voralabs.com
                 </a>
               </div>
             </aside>

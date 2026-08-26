@@ -6,7 +6,7 @@ import BrandLogo from "@/components/ui/BrandLogo";
 import { useCart } from "@/components/cart/CartContext";
 
 export default function ShopHeader({
-  backHref = "/shop",
+  backHref = "/products",
   backLabel = "Back to Shop",
 }: {
   backHref?: string;
@@ -34,7 +34,7 @@ export default function ShopHeader({
             {ready && count > 0 && (
               <span
                 aria-hidden
-                className="absolute -right-1 -top-1 grid min-w-[20px] h-5 place-items-center rounded-full bg-navy px-1 text-[11px] font-semibold leading-none text-ivory ring-2 ring-white"
+                className="absolute -right-1 -top-1 grid min-w-[20px] h-5 place-items-center rounded-full bg-navy px-1 text-[12px] font-semibold leading-none text-ivory ring-2 ring-white"
               >
                 {count > 99 ? "99+" : count}
               </span>

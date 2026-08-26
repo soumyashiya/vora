@@ -17,7 +17,9 @@ function Card({ t }: { t: (typeof TESTIMONIALS)[number] }) {
         </div>
       </div>
 
-      <p className="mt-6 text-[15px] leading-relaxed text-navy/75">“{t.quote}”</p>
+      {/* flex-1 lets the quote absorb the height difference between cards so
+          every "Verified Highlights" block starts on the same line */}
+      <p className="mt-6 flex-1 text-[15px] leading-relaxed text-navy/75">“{t.quote}”</p>
 
       <p className="mt-7 font-serif text-2xl text-navy">Verified Highlights</p>
       <div className="mt-4 grid grid-cols-2 gap-2.5">
@@ -34,13 +36,13 @@ function Card({ t }: { t: (typeof TESTIMONIALS)[number] }) {
 export default function Testimonials() {
   const loop = [...TESTIMONIALS, ...TESTIMONIALS];
   return (
-    <section id="verify" className="section-pad relative overflow-hidden bg-ivory">
+    <section id="verify" className="section-pad-sm relative overflow-hidden bg-ivory">
       <div className="absolute inset-0 topo-grid opacity-50" />
       <div className="container-x relative">
         <SectionHeading eyebrow="Verification" title="What Researchers Say" />
       </div>
 
-      <div className="group relative mt-16 flex overflow-hidden">
+      <div className="group relative mt-12 flex overflow-hidden">
         {/* edge fades */}
         <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-ivory to-transparent" />
         <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-ivory to-transparent" />

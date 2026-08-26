@@ -25,7 +25,7 @@ const ITEMS: { label: string; icon: IconType }[] = [
 export default function ClientsBar() {
   const loop = [...ITEMS, ...ITEMS];
   return (
-    <section className="bg-ivory py-14 sm:py-16">
+    <section className="bg-ivory pb-6 pt-12 sm:pb-8 sm:pt-14">
       <div className="container-x">
         <motion.p
           initial={{ opacity: 0, y: 14 }}

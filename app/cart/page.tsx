@@ -33,7 +33,7 @@ export default function CartPage() {
             <p className="mt-2 text-navy/55">
               Browse our research compounds to get started.
             </p>
-            <Link href="/shop" className="btn-lime mt-7">
+            <Link href="/products" className="btn-lime mt-7">
               Browse Products
               <span className="icon-circle">
                 <FiArrowRight size={16} />

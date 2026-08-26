@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
 import { LuBadgeCheck, LuFlaskConical, LuShieldCheck } from "react-icons/lu";
 import { TRUST_ITEMS } from "@/lib/data";
+import { pageMetadata } from "@/lib/seo";
 import ShopHeader from "@/components/cart/ShopHeader";
 import ShopGrid from "@/components/shop/ShopGrid";
 import Footer from "@/components/Footer";
 
-export const metadata: Metadata = {
-  title: "Shop — Vora Labs",
+export const metadata: Metadata = pageMetadata({
+  path: "/products",
+  title: "Research Peptides, Janoshik Tested & COA",
   description:
-    "Browse the full Vora Labs research peptide catalogue. Janoshik tested, 99%+ HPLC verified purity, batch-level Certificate of Analysis on every release.",
-};
+    "Vora Labs provides premium research-grade peptides for laboratory research. Third-party tested, HPLC verified, with batch COAs.",
+});
 
 export default function ShopPage() {
   return (
@@ -63,8 +65,8 @@ export default function ShopPage() {
           </div>
 
           <p className="mx-auto mt-10 max-w-2xl text-center text-[12px] uppercase tracking-[0.14em] text-navy/45">
-            For laboratory R&amp;D use only — not for human or veterinary
-            consumption
+            For laboratory R&amp;D use only. Not for human or veterinary
+            consumption.
           </p>
         </div>
       </section>

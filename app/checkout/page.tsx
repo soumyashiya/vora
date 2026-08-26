@@ -295,7 +295,7 @@ export default function CheckoutPage() {
                         sizes="64px"
                         className="object-cover"
                       />
-                      <span className="absolute -right-1 -top-1 grid h-5 min-w-[20px] place-items-center rounded-full bg-navy px-1 text-[11px] font-bold text-ivory">
+                      <span className="absolute -right-1 -top-1 grid h-5 min-w-[20px] place-items-center rounded-full bg-navy px-1 text-[12px] font-bold text-ivory">
                         {it.qty}
                       </span>
                     </div>

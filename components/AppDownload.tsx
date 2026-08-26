@@ -22,7 +22,7 @@ function StoreButton({
     >
       <span className="text-2xl text-ivory">{icon}</span>
       <span className="text-left text-ivory">
-        <span className="block text-[11px] uppercase tracking-wider text-ivory/60">
+        <span className="block text-[12px] uppercase tracking-wider text-ivory/60">
           {top}
         </span>
         <span className="block text-[15px] font-semibold">{bottom}</span>
